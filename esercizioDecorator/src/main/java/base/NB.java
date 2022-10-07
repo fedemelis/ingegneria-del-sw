@@ -10,7 +10,7 @@ public class NB extends PC {
 
     @Override
     public String getDesc() {
-        return "Notebook pc.PC";
+        return "Notebook pc";
     }
 
 
