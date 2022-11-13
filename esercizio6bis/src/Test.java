@@ -21,8 +21,10 @@ public class Test {
         Iterator gattiIter = Arrays.stream(fabbricaGatti.getGattiList()).iterator();
 
         while(dinoIter.hasNext() && gattiIter.hasNext()){
-            System.out.println(dinoIter.next());
-            System.out.println(gattiIter.next());
+            Giocattolo g = (Giocattolo) dinoIter.next();
+            g.gioca();
+            g = (Giocattolo) gattiIter.next();
+            g.gioca();
         }
 
     }
